@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "test_121x",
+	"version": "${version}",
+	"name": "Test_1.21.X",
+	"description": "testing ts yoooo",
+	"authors": [
+		"DANASTIK"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/test_121x/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.danastik.test.Test_121X"
+		],
+		"fabric-datagen": [
+			"net.danastik.test.Test_121XDataGenerator"
+		],
+		"client": [
+			"net.danastik.test.TestClient"
+		]
+	},
+	"mixins": [
+		"test_121x.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
