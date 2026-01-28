@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:milk_bucket"
+    }
+  },
+  "pattern": [
+    "AA ",
+    "AA ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "test_121x:cheese"
+  },
+  "show_notification": false
+}
