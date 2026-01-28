@@ -7,9 +7,11 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.danastik.test.item.CleaningEffects;
 
 public class ModItems {
-    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
+    public static final Item CHEESE = registerItem("cheese",
+            new CleaningEffects(new Item.Settings().food(ModFoodComponents.CHEESE).maxCount(16)));
 
 
     private static Item registerItem(String name, Item item) {
