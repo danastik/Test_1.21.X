@@ -9,12 +9,13 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()));
+    public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
 
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Test_121X.MOD_ID, name), item);
     }
+
 
     public static void registerModItems() {
         Test_121X.LOGGER.info("Registering Mod Items for " + Test_121X.MOD_ID);
